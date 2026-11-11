@@ -92,7 +92,6 @@ public abstract class Creature extends Entity {
         return Math.hypot(getX() - other.getX(), getY() - other.getY());
     }
  
-    /** All creatures of one subtype, e.g. ofType(sim, Prey.class). Replaces the instanceof loops. */
     protected static <T extends Creature> Stream<T> ofType(List<Creature> creatures, Class<T> type){
         return creatures.stream()
                 .filter(type::isInstance)

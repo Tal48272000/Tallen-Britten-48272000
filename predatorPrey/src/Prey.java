@@ -95,7 +95,7 @@ public class Prey extends Creature {
  
     @Override
     protected int getStarvationRate(){
-        return isInDanger() ? starvationRate * 2 : starvationRate; // Prey starve faster when fleeing
+        return isInDanger() ? starvationRate * 2 : starvationRate; 
     }
  
     @Override
